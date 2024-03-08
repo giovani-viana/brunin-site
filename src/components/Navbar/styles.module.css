@@ -1,0 +1,18 @@
+.Navbar {
+  background-color: #b2a4d4;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.Navbar_items {
+  color: black;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar_items_texto {
+  font-size: 1rem;
+  font-weight: bold;
+}

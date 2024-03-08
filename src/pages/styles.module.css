@@ -1,0 +1,24 @@
+.Cortes {
+  background: linear-gradient(180deg, grey 0%, white 100%);
+}
+
+.Title_Cortes {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: purple;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
