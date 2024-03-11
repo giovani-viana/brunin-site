@@ -1,8 +1,22 @@
-.footer {
-  background-color: #f5f5f5;
-  padding: 10px 0;
+.Footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-align: center;
-  position: fixed;
+  justify-content: flex-end;
+  background-color: #b2a4d4;
+  padding: 10px 0;
   width: 100%;
-  bottom: 0;
+  gap: 10px;
+}
+.Footer p,
+.Footer div,
+.Footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
 }
