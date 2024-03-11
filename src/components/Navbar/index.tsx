@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link href="/">FOTOS</Link>
           </li>
           <li className={styles.Navbar_items_texto}>
-            <Link href="/">CONTATO</Link>
+            <Link href="/contato">CONTATO</Link>
           </li>
         </ul>
       </nav>
