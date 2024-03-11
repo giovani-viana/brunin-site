@@ -1,6 +1,3 @@
-.Cortes {
-  background: linear-gradient(180deg, grey 0%, white 100%);
-}
 
 .Title_Cortes {
   font-size: 2.5rem;
@@ -21,4 +18,36 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.Seção_Cortes{
+  margin-bottom: 100px;
+  background: linear-gradient(180deg, rgb(161, 158, 158) 0%, white 100%); 
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 20rem 20rem;
+  grid-gap: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+.Seção_Conversa{
+  display: grid;
+  grid-template-columns: 20rem 20rem;
+  grid-gap: 0;
+  justify-content: center;
+}
+
+.Seção_Profissionais{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Seção_Profissionais_Content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

@@ -1,0 +1,21 @@
+.Card{ 
+    width: 250px;
+    height: 250px;
+    background-color: #b2a4d4;
+}
+
+.Card_Title{
+    display: grid;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.Card_Content {
+    display: grid;
+    color: white;
+}
