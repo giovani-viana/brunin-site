@@ -54,7 +54,7 @@
 .Seção_Serviços {
   background-color: rgb(50, 9, 88);
   display: grid;
-  place-items: center; /* This will center the items both vertically and horizontally */
+  place-items: center;
   grid-gap: 1rem;
 }
 
