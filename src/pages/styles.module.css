@@ -82,7 +82,7 @@
   margin-top: 100px;
   background: linear-gradient(180deg, #b2a4d4 0%, white 100%);
   display: grid;
-  place-items: center; /* This will center the items both vertically and horizontally */
+  place-items: center;
   grid-gap: 1rem;
   margin-bottom: 10vh;
 }

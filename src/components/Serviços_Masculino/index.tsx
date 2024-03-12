@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./styles.module.css";
 
 const ServicesDB = [
   {
@@ -25,17 +26,15 @@ const ServicesDB = [
 
 const Serviços_Masculino: React.FC = () => {
   return (
-    <div className="table-container">
-      <h1 className="table-header">Serviços Masculino</h1>
-      <div className="table">
+    <div className={styles.table_container}>
+      <h1 className={styles.table_header}>Masculino</h1>
+      <div className={styles.table}>
         {ServicesDB.map((service) => (
-          <div className="table-row">
-            <div className="table-cell">{service.nome}</div>
-            <div className="table-cell">{service.tempo}</div>
-            <div className="table-cell">
-              {service.preço}
-              <button className="table-button">Button</button>
-            </div>
+          <div className={styles.table_row}>
+            <div className={styles.table_row}>{service.nome}</div>
+            <div className={styles.table_row}>{service.tempo}</div>
+            <div className={styles.table_row}>{service.preço}</div>
+            <button className={styles.table_button}>Agendar agora</button>
           </div>
         ))}
       </div>

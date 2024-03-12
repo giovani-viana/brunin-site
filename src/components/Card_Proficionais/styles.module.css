@@ -1,28 +1,26 @@
 .Card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 8vh;
-    width: 100%;
-    max-width: 300px; /* Adjust as needed */
-  }
-
-.Card_Name{
-    display: grid;
-    font-size: 1.5rem;
-    font-weight: bold;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8vh;
+  width: 100%;
+  max-width: 300px;
 }
 
-.Card_Image{
-    border-radius: 100px;
+.Card_Name {
+  display: grid;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
+.Card_Image {
+  border-radius: 100px;
+}
 
 @media (max-width: 600px) {
-    .Card {
-      width: 100%;
-      margin: 10px;
-    }
+  .Card {
+    width: 100%;
+    margin: 10px;
   }
+}

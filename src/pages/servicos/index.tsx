@@ -8,9 +8,6 @@ const servicos: React.FC = () => {
       <div className={styles.formContainer}>
         <Serviços_Masculino />
       </div>
-      <div className={styles.textContainer}>
-        <p>This is some text on the side.</p>
-      </div>
     </div>
   );
 };

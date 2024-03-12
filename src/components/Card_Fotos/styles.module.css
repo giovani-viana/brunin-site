@@ -1,9 +1,9 @@
 .Card {
   display: grid;
-  grid-template-rows: auto 1fr; /* This will create two rows: one for the title and one for the content */
+  grid-template-rows: auto 1fr;
   width: 18vw;
   height: 100%;
-  grid-column: 2; /* This will place the card in the second column */
+  grid-column: 2;
   align-items: center;
   justify-items: center;
 }
