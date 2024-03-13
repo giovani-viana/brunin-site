@@ -1,23 +1,28 @@
 import React from "react";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 const ServicesDB = [
   {
+    id: "1",
     nome: "Corte",
     tempo: "30M",
     preço: "R$ 30,00",
   },
   {
+    id: "2",
     nome: "Barba",
     tempo: "2h",
     preço: "R$ 30,00",
   },
   {
+    id: "3",
     nome: "Pacote",
     tempo: "4h",
     preço: "R$ 30,00",
   },
   {
+    id: "4",
     nome: "Pacote",
     tempo: "2h",
     preço: "R$ 30,00",
@@ -47,7 +52,9 @@ const Serviços_Feminino: React.FC = () => {
                 <div className={styles.table_row}>{service.tempo}</div>
                 <div className={styles.table_row}>{service.preço}</div>
               </div>
-              <button className={styles.table_button}>Agendar agora</button>
+              <Link href={"/servicos/agendar/" + service.id}>
+                <button className={styles.table_button}>Agendar agora</button>
+              </Link>
             </div>
           </>
         ))}

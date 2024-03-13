@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-const agendar: React.FC = () => {
+const agendamentos: React.FC = () => {
   return (
     <>
       <p className={styles.title}>Agendar</p>
@@ -52,4 +52,4 @@ const agendar: React.FC = () => {
   );
 };
 
-export default agendar;
+export default agendamentos;

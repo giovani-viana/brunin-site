@@ -28,7 +28,7 @@ const Navbar = () => {
             <Link href="/servicos">SERVIÇOS</Link>
           </li>
           <li className={styles.Navbar_items_texto}>
-            <Link href="/agendar">AGENDAR</Link>
+            <Link href="/agendamentos">AGENDAR</Link>
           </li>
           <li className={styles.Navbar_items_texto}>
             <Link href="/">FOTOS</Link>
