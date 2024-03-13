@@ -24,10 +24,19 @@ const ServicesDB = [
   },
 ];
 
-const Serviços_Masculino: React.FC = () => {
+const Serviços_Feminino: React.FC = () => {
   return (
     <div className={styles.table_container}>
-      <h1 className={styles.table_header}>Masculino</h1>
+      <p className={styles.table_header}>Feminino</p>
+      <div className={styles.header_container}>
+        <div className={styles.header_container_categories}>
+          <div className={styles.header_category}>Corte</div>
+          <div className={styles.header_category}>Unha</div>
+          <div className={styles.header_category}>Depilação</div>
+        </div>
+        <div className={styles.line_category}></div>
+      </div>
+
       <div className={styles.table}>
         {ServicesDB.map((service) => (
           <>
@@ -48,4 +57,4 @@ const Serviços_Masculino: React.FC = () => {
   );
 };
 
-export default Serviços_Masculino;
+export default Serviços_Feminino;
