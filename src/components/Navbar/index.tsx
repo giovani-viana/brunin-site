@@ -11,9 +11,9 @@ const Navbar = () => {
           <li>
             <Link href="/">
               <Image
-                src="/logo.png"
+                src="/favicon.ico"
                 alt="Picture of the author"
-                width={100}
+                width={120}
                 height={100}
               />
             </Link>
