@@ -85,7 +85,9 @@ export default function Page() {
         <div>
           <h1 className={styles.Title_Cortes}>Cortes</h1>
           <div>Clique aqui divara editar e adicionar o serviço que deseja</div>
-          <button className={styles.button}>Agende</button>
+          <Link href="/agendar">
+            <button className={styles.button}>Agende</button>
+          </Link>
         </div>
       </section>
 
@@ -157,7 +159,7 @@ export default function Page() {
           ))}
         </div>
 
-        <Link href="serviços">
+        <Link href="/agendar">
           <button className={styles.Serviços_Button}>Ver Serviços</button>
         </Link>
       </section>

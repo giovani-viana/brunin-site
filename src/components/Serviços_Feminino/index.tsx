@@ -52,7 +52,7 @@ const Serviços_Feminino: React.FC = () => {
                 <div className={styles.table_row}>{service.tempo}</div>
                 <div className={styles.table_row}>{service.preço}</div>
               </div>
-              <Link href={"/servicos/agendar/" + service.id}>
+              <Link href={"agendar/agendar/" + service.id}>
                 <button className={styles.table_button}>Agendar agora</button>
               </Link>
             </div>

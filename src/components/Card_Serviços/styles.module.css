@@ -34,3 +34,15 @@
   color: white;
   font-size: 2vh;
 }
+
+@media screen and (min-width: 600px) {
+  .Card {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Card {
+    width: 18vw;
+  }
+}

@@ -35,13 +35,13 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin-top: 20px;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .Seção_Cortes {
-  margin-bottom: 100px;
+  margin-bottom: 15vh;
   background: linear-gradient(180deg, rgb(161, 158, 158) 0%, white 100%);
   width: 100vw;
   display: grid;

@@ -1,0 +1,34 @@
+.Conversa_Title_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.Conversa_Title {
+  margin: 0px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: purple;
+}
+
+.line {
+  height: 2px;
+  width: 20vw;
+  background-color: purple;
+}
+
+.Seção_Conversa {
+  display: grid;
+  place-items: center;
+  grid-gap: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10vh;
+}
+
+.Seção_Conversa_Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
