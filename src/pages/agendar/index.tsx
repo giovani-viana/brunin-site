@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import Serviços_Masculino from "@/components/Serviços_Masculino";
 import Serviços_Feminino from "@/components/Serviços_Feminino";
 
-const servicos: React.FC = () => {
+const agendar: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.formContainer}>
@@ -14,4 +14,4 @@ const servicos: React.FC = () => {
   );
 };
 
-export default servicos;
+export default agendar;

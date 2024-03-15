@@ -5,6 +5,27 @@
   margin-bottom: 1rem;
 }
 
+.Conversa_Title_Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.Conversa_Title {
+  margin: 0px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: purple;
+}
+
+.line {
+  height: 2px;
+  width: 20vw;
+  background-color: purple;
+}
+
 .button {
   background-color: purple;
   border: none;
@@ -32,9 +53,16 @@
 
 .Seção_Conversa {
   display: grid;
-  grid-template-columns: 20rem 20rem;
-  grid-gap: 0;
-  justify-content: center;
+  place-items: center;
+  grid-gap: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10vh;
+}
+
+.Seção_Conversa_Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .Seção_Profissionais {

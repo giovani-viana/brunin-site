@@ -90,16 +90,20 @@ export default function Page() {
       </section>
 
       <section className={styles.Seção_Conversa}>
-        <div>
+        <div className={styles.Conversa_Title_Container}>
+          <h1 className={styles.Conversa_Title}>Sobre</h1>
+          <div className={styles.line}></div>
+        </div>
+        <div className={styles.Seção_Conversa_Container}>
           <Image
             src="/assets/Conversa.jpg"
             alt="Cortes"
             width={350}
             height={250}
           />
-        </div>
-        <div>
-          <p>TEASDOIAHJSDOHASOIDHOIHASDLOIJHDLOASJDLASJo</p>
+          <div>
+            <p>TEASDOIAHJSDOHASOIDHOIHASDLOIJHDLOASJDLASJo</p>
+          </div>
         </div>
       </section>
 
