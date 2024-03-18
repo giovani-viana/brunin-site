@@ -5,6 +5,9 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import Link from "next/link";
+import Primeiro_Form from "@/components/Forms/Primeiro_Form";
+import Segundo_Form from "@/components/Forms/Segundo_Form";
+import { useState } from "react";
 
 const AgendamentoProps = {
   id: "1",
@@ -108,77 +111,58 @@ const AgendamentoProps = {
   ],
 };
 
-const agendar: React.FC = () => {
+const Agendar: React.FC = () => {
   const horários = AgendamentoProps.Data;
   const dia = horários.map((Data) => Data.dia);
   const mes = horários.map((Data) => Data.mes);
   const horas = horários.map((Data) => Data.horarios);
 
-  const half = Math.ceil(horas.length / 2);
-  const firstHalf = horas.slice(0, half);
-  const secondHalf = horas.slice(half);
+  const [showSecondForm, setShowSecondForm] = React.useState(false);
+
+
+  const handleButtonClick = () => {
+    setShowSecondForm(true);
+  }
 
   return (
     <>
       <div className={styles.container}>
         <div className={styles.first_container}>
-          <div className={styles.back_button}>
-            <ArrowBackIosIcon />
-            <Link href="/agendar">
-              <p>Voltar</p>
-            </Link>
-          </div>
-          <p className={styles.sub_title}>{AgendamentoProps.serviço}</p>
-          <div className={styles.line}></div>
-          <p>Confira nossos horários e datas</p>
-          <div className={styles.caledar_container}>
-            <p>Selecione uma data e horário</p>
-            <LocalizationProvider dateAdapter={AdapterDayjs}>
-              <DateCalendar />
-            </LocalizationProvider>
-          </div>
-          <div className={styles.horarios_container}>
-            <p className={styles.data}>
-              {dia[1]}, de {mes[1]}{" "}
-            </p>
-          </div>
-        </div>
+          {!showSecondForm && <>
+            <div className={styles.first_container}>
+              <div className={styles.header_container}>
+                <div className={styles.back_button}>
+                  <ArrowBackIosIcon />
+                  <Link href="/agendar">
+                    <p>Voltar</p>
+                  </Link>
+                </div>
+                <p className={styles.sub_title}>{AgendamentoProps.serviço}</p>
+                <p className={styles.text}>Confira nossos horários e datas</p>
+                <div className={styles.line}></div>
+              </div>
+              <div className={styles.caledar_container}>
+                <p>Selecione uma data e horário</p>
+                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                  <DateCalendar />
+                </LocalizationProvider>
+              </div>
 
-        <div className={styles.second_container}>
-          <form className={styles.form}>
-            <p className={styles.title}>Agende sua consulta</p>
+              <div className={styles.horarios_container}>
+                {dia[1]}, de {mes[1]}{" "}
+                {horas[1].map((hora) => (
+                  <div key={hora.id} className={styles.horarios}>{hora.hora}</div>
+                ))}
+              </div>
+            </div>
 
-            <input
-              className={styles.field1}
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Nome"
-            />
-
-            <input
-              className={styles.field2}
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <textarea
-              className={styles.field3}
-              id="message"
-              name="message"
-              rows={4}
-              placeholder="Digite sua mensagem"
-            />
-
-            <button type="submit" className={styles.button}>
-              Enviar
-            </button>
-          </form>
+            <Primeiro_Form onButtonClick={handleButtonClick} />
+          </>}
+          {showSecondForm && <Segundo_Form />}
         </div>
       </div>
     </>
   );
 };
 
-export default agendar;
+export default Agendar;

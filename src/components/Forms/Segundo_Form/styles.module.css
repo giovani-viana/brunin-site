@@ -1,0 +1,82 @@
+.container {
+  display: grid;
+  padding-left: 20vw;
+  grid-template-areas: "first_section second_section";
+  gap: 10vw;
+  margin: 20px;
+}
+
+.back_button {
+  color: blueviolet;
+  grid-area: back_button;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub_title {
+  grid-area: sub_title;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.line {
+  grid-area: line;
+  height: 2px;
+  width: 20vw;
+  background-color: black;
+}
+
+.first_section,
+.second_section {
+  width: 45%;
+  padding: 20px;
+}
+
+.first_section form,
+.second_section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field1,
+.field2,
+.field3 {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: blueviolet;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}

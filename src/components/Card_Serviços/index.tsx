@@ -20,7 +20,7 @@ const Card_Serviços: React.FC<CardProps> = ({ title, content, image }) => {
         src={image}
         alt="Conversa"
         width={135}
-        height={180}
+        height={250}
       />
       <div className={styles.Card}>
         <p className={styles.Card_Title}>{title}</p>

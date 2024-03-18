@@ -1,0 +1,36 @@
+.form {
+  margin-left: 20vh;
+  margin-bottom: 5vh;
+  gap: 2vw;
+}
+
+.input {
+  grid-area: inputContainer;
+  margin-bottom: 2vh;
+  width: 20vw;
+  height: 5vh;
+  padding: 0 1vw;
+}
+
+.button {
+  grid-area: button;
+  height: 5vh;
+  border-radius: 5px;
+  border: none;
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title {
+  grid-area: title;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sub_title {
+  grid-area: sub_title;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

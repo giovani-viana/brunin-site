@@ -28,7 +28,7 @@ const Navbar = () => {
             <Link href="/agendar">AGENDAR</Link>
           </li>
           <li className={styles.Navbar_items_texto}>
-            <Link href="/">FOTOS</Link>
+            <Link href="/fotos">FOTOS</Link>
           </li>
           <li className={styles.Navbar_items_texto}>
             <Link href="/contato">CONTATO</Link>
