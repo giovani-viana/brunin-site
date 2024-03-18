@@ -13,6 +13,13 @@
     "calendar_container horarios_container";
   gap: 5vh;
 
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header_container header_container"
+      "calendar_container horarios_container";
+  }
+
   .header_container {
     grid-area: header_container;
     display: grid;
@@ -61,8 +68,16 @@
 .line {
   grid-area: line;
   height: 2px;
-  width: 20vw;
+  width: 100%;
   background-color: black;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 992px) {
+    width: 30%;
+  }
 }
 
 .horarios {
@@ -77,21 +92,9 @@
   grid-area: second_container;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 5vh;
-}
 
-.second_container {
-  > .form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "title title"
-      "field1 field2"
-      "field3 field3"
-      "button button";
-    margin-bottom: 5vh;
-    gap: 2vw;
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 }
 

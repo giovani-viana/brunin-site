@@ -7,3 +7,23 @@
   margin-bottom: 20px;
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .formContainer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .formContainer {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .formContainer {
+    width: 33%;
+  }
+}
