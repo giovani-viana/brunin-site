@@ -26,3 +26,23 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 800px) {
+  .Seção_Fotos {
+    display: grid;
+  }
+
+  .Seção_Fotos_Content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Seção_Fotos {
+    display: grid;
+  }
+
+  .Seção_Fotos_Content {
+    flex-direction: column;
+  }
+}
