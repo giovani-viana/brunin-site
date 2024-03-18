@@ -151,7 +151,7 @@ export default function Page() {
       </section>
 
       <section className={styles.Seção_Fotos}>
-        <p>Fotos</p>
+        <p className={styles.Conversa_Title}>Fotos</p>
 
         <div className={styles.Seção_Fotos_Content}>
           {fotosData.map((data, index) => (
