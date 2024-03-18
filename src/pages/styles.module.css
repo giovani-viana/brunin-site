@@ -1,3 +1,7 @@
+.main {
+  width: 100%;
+  box-sizing: border-box;
+}
 .Title_Cortes {
   font-size: 2.5rem;
   font-weight: 700;
@@ -134,4 +138,54 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .Seção_Serviços {
+    grid-gap: 0.5rem;
+  }
+
+  .Card_Serviços_Container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Seção_Cortes {
+    grid-template-columns: 25rem;
+  }
+  .Seção_Conversa {
+    grid-gap: 1rem;
+    margin-bottom: 5vh;
+  }
+
+  .Seção_Conversa_Container {
+    flex-direction: column;
+  }
+
+  .Seção_Fotos {
+    display: grid;
+  }
+
+  .Seção_Fotos_Content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Seção_Fotos {
+    display: grid;
+  }
+
+  .Seção_Fotos_Content {
+    flex-direction: column;
+  }
+
+  .Seção_Conversa {
+    grid-gap: 1.5rem;
+    margin-bottom: 7vh;
+  }
+
+  .Seção_Conversa_Container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }

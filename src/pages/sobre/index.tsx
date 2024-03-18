@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 export default function Sobre() {
   return (
-    <main>
+    <main className={styles.main}>
       <section className={styles.Seção_Conversa}>
         <div className={styles.Conversa_Title_Container}>
           <h1 className={styles.Conversa_Title}>Sobre</h1>

@@ -6,7 +6,7 @@
 .Card {
   display: grid;
   grid-template-rows: auto 1fr;
-  width: 18vw;
+
   height: 100%;
   background-color: #b2a4d4;
   grid-column: 2;
@@ -37,12 +37,12 @@
 
 @media screen and (min-width: 600px) {
   .Card {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 900px) {
   .Card {
-    width: 18vw;
+    width: 100%;
   }
 }
